@@ -22,6 +22,24 @@ body{
     color: white;
     margin: 35px 45px;
 }
+.nav-items{
+    font-size: 25px;
+    font-weight: 600 ;
+}
+.nav-items a:hover{
+    color: red;
+}
+.menu-items a{
+    font-weight: 600;
+    margin-left:40px ;
+
+}
+.menu-items a:hover{
+    color: red;
+    font-size: 30px;
+}
+
+
 
 
 #intro-block {
@@ -35,9 +53,13 @@ body{
 
 }
 
+
 .intro-div{
     width: 60%
 
+}
+.intro-div h1:hover{
+    color: red;
 }
 .intro-div h1{
     font-size: 55px;
@@ -74,16 +96,21 @@ body{
     margin-left: 90%;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px)
+ {
 
-    #intro-block{
+    #intro-block
+    {
         flex-direction: column;
+        padding:0 40px;
     }
-    .intro-div{
+    .intro-div
+    {
         width: 100%;
     }
     .social-icon{
         display: inline-flex;
+        
         
     }
     .social-icon i{
