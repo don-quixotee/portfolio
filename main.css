@@ -1,5 +1,6 @@
 body{
     background-color: #021D44;
+    margin: 0;
 }
 
 
@@ -96,10 +97,55 @@ body{
     margin-left: 90%;
 }
 
+
+/* work */
+
+.work h1{
+font-size: 50px; 
+color: red; 
+text-align: center;
+
+}
+.work h1:hover{
+    color: white;
+}
+
+
+
+.mywork{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.work-item{
+    width: 350px;
+    height: 300px;
+    margin: 10px 30px;
+    border-radius: 25px;
+    padding:3px;
+    background-color: red;
+
+
+}
+.web-snap{
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    border-radius: 25px;
+    
+}
+
+
+
+
+/* responsive */
+
 @media screen and (max-width: 800px)
  {
      .top-nav{
-        box-shadow: 0 1px 0 0;
+        box-shadow: 0 1px 0 0 red;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -126,6 +172,14 @@ body{
         margin-right: 20px;
         align-items: center;
         justify-content: center;
+    }
+    .work p{
+        width: 100;
+        text-align: center;
+        margin-left: 15%;
+        
+       
+       
     }
 }
 
