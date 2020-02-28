@@ -36,8 +36,10 @@ body{
 
 }
 .menu-items a:hover{
+    text-decoration: none;
     color: red;
     font-size: 30px;
+  
 }
 
 
@@ -61,6 +63,7 @@ body{
 }
 .intro-div h1:hover{
     color: red;
+    
 }
 .intro-div h1{
     font-size: 55px;
@@ -86,6 +89,10 @@ body{
     padding-top: 0;
 }
 
+.social-icon a:hover{
+    transform: scale(1.5);
+}
+
 .social-icon i{
     background-color: red;
     width: 40px;
@@ -104,6 +111,7 @@ body{
 font-size: 50px; 
 color: red; 
 text-align: center;
+transition: transform .2s;
 
 }
 .work h1:hover{
@@ -120,6 +128,7 @@ text-align: center;
     flex-wrap: wrap;
 }
 .work-item{
+    position: relative;
     width: 300px;
     height: 250px;
     margin: 20px 45px;
@@ -134,8 +143,49 @@ text-align: center;
     height: 250px;
     text-align: center;
     border-radius: 25px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
     
 }
+
+
+/*  */
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+
+.work-item:hover .web-snap {
+  opacity: 0.3;
+}
+
+.work-item:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
+
+
+  /*  */
 
 .About{
     width: 100%;
